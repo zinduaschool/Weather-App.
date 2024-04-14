@@ -11,3 +11,18 @@ The application should have the following features:
 - Implement a loading indicator to let the user know when the data is being fetched.
 
 For an additional challenge, you could also include a feature to toggle between Celsius and Fahrenheit units for the temperature display.
+
+
+
+
+
+
+.search button{
+    width: 55px;
+    height: 45px;
+    padding: 10px;
+    cursor: pointer;
+    border: 2px transparent;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
