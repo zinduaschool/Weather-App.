@@ -1,3 +1,4 @@
+[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-718a45dd9cf7e7f842a935f5ebbe5719a5e09af4491e668f4dbf3b35d5cca122.svg)](https://classroom.github.com/online_ide?assignment_repo_id=14694659&assignment_repo_type=AssignmentRepo)
 # Weather-App
 
 Build a weather application that fetches weather data from an API asynchronously and displays it to the user.
@@ -10,3 +11,18 @@ The application should have the following features:
 - Implement a loading indicator to let the user know when the data is being fetched.
 
 For an additional challenge, you could also include a feature to toggle between Celsius and Fahrenheit units for the temperature display.
+
+
+
+
+
+
+.search button{
+    width: 55px;
+    height: 45px;
+    padding: 10px;
+    cursor: pointer;
+    border: 2px transparent;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
