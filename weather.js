@@ -6,6 +6,25 @@ const icon = document.querySelector(".weather-icon");
 const change = document.getElementById("change");
 
 
+
+
+// celcius to degrees
+// kelvin degrees start off
+const kelvin = 293;
+console.log (kelvin);
+
+// converting kelvin to celcius
+let celcius = (kelvin - 273);
+console.log(celcius);
+
+//converting farenheit to celcius then rounding off the number
+var farenheit = (celcius *(9/5)+32);
+Math.floor(farenheit.value);
+console.log(farenheit);
+
+
+
+
 async function weatherCheck(city) {
     const response = await fetch(APIurl + city + ` &appid=${APIkey}`);
 
