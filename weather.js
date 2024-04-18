@@ -3,12 +3,15 @@ const APIurl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q="
 const searchBox = document.querySelector(".search input");
 const Btn = document.querySelector(".search button");
 const icon = document.querySelector(".weather-icon");
+const change = document.getElementById("change");
+
 
 async function weatherCheck(city) {
     const response = await fetch(APIurl + city + ` &appid=${APIkey}`);
 
-    if (response.status == 404) {
-        document.querySelector(".weather").style.display = "none";
+    if (response.status === 404) {
+        alert("city not found")
+    
     }
     else {
         var data = await response.json();
@@ -38,7 +41,7 @@ async function weatherCheck(city) {
 
         document.querySelector(".weather").style.display = "block";
         document.querySelector(".error").style.display = "none";
-
+        
     }
 
 }
@@ -46,4 +49,25 @@ async function weatherCheck(city) {
 Btn.addEventListener("click", () => {
     weatherCheck(searchBox.value)
 })
+
+
+change.addEventListener("click", () =>{
+    if (data.main.temp == metric) {
+
+        var farenheit = (celcius * (9 / 5) + 32);
+        Math.floor(farenheit.value);
+        console.log(farenheit.value)
+     } else {
+
+            
+    }
+
+
+
+})
+
+
+console.log(farenheit);
+
+
 weatherCheck();
